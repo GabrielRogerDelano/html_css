@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--favicon-->
+        <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+        <title>java Script </title>
+        <!--<script src="js/hello.js"></script>-->
+    </head>
+    <body style="background-color:rgb(28, 149, 197)">
+        <h1>agora é java Script</h1>
+        <!--como usar os links internos-->
+        <h1>Links internos </h1>
+        <h2>link para a <a href="pagina02.html" title="pagina 2"rel="next" target="_self">pagina 2</a></h2>
+        <h2>link para a <a href="outroSITE/pagina03.html" rel="next" target="_self"> pagina 3</a></h2>
+        <!--como usar links externos-->
+        <h1>Lnks externos 😎</h1>
+        <h2><a href="http://emojipedia.org" target="_blanck" rel="nofollow">emojipédia</a></h2>
+        
+        <h1>Link de dowload</h1>
+        <ul>
+            <li><a href="imagem/fotinha.png" download="imagem/fotinha.png" type="image/png">baixar o fotinha </a></li>
+            <li><a href="imagem/favicon_io.zip">baixar o arquivo zip do favicon </a></li>
+        </ul>
+
+
+        <h1>imagem dinamica</h1>
+        <h2>um imagem q muda com o tamanho da tela</h2>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="imagem/foto-m.png" type="image/png">
+            <img src="imagem/foto-g.png">
+        </picture>
+
+        <h1>audio </h1>
+        <!--voce tmb pode mudar o mp3 por "ogg" ou "wav" que é mais pesado-->
+        <audio preload="metadata" controls>
+            <source src="media/uma-musica.mp3" type="audio/mp3">
+        </audio>
+
+        <h1>video </h1>
+        <video src="media/video.mp4.mp4" width="500" controls poster="imagem/foto-g.png" autoplay loop><!-- tambem da pra fazer como no 
+        audio para que funcione em outros navegadores --></video>
+
+        <h1>carregando videos do youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>
