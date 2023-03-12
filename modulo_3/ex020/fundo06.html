@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valores para bg-size</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: justify;
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;*/
+            background: black url('imagens/wallpaper002.jpg') center center repeat fixed;
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+            margin: auto;
+            padding: 10px;
+            max-width: 600px;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>ShortHand do background</h2>
+            <p>background: color > url('') > position > repeat > attachment;</p>
+        <h2>Como colocar cor de fundo</h2>
+            <p>background-color: black, blue, rgb(00982f) etc;</p>
+        <h2>Como colocar uma imagem de plano de fundo</h2>
+            <p>background-image: url('');</p>
+        <h2>Como colocar a posicao de referencia da imagem</h2>
+            <p>background-position: x y;</p>
+            <ul>
+                <li>Valores para o X mudam o sentido horizontal : <mark>left, center, right</mark></li>
+                <li>Valores para o Y mudam o sentido vertical : <mark>top, center, bottom</mark></li>
+            </ul>
+        <h2>Como escolher com vai se repetir</h2>
+            <p>background-repeat: ;</p>
+            <ul>
+                <li>"<mark>repeat</mark>" vem por padrao, repete durante a pagina toda tanto no eixo X como no Y</li>
+                <li>"<mark>no-repeat</mark>" faz a imagem aparecer apenas uma vez</li>
+                <li>"<mark>repeat-x</mark>" faz a imagem a imagem se repetir apenas no eixo X</li>
+                <li>"<mark>repeat-y</mark>" faz a imagem a imagem se repetir apenas no eixo Y</li>
+            </ul>
+        <h2>Valores para bg-size</h2>
+            <p>background-size: ;</p>
+            <ul>
+                <li>Por padrao fica 'auto'.</li>
+                <li>Pode ser unidade de medida(ex: 100px, 10vh, 100%).</li>
+                <li>'<mark>Contain</mark>' exibe a imagem completa, mas a imagem nao pega toda a pagina.</li>
+                <li>'<mark>Cover</mark>' pega a pagina toda, mas nao mostra toda a imagem(estou usando nessa pagina).</li>
+            </ul>
+        <h2>Valores para bg-attachment</h2>
+            <p>background-attachment: ;</p>
+            <ul>
+                <li>'<mark>fixed</mark>' torna a imagem fixa</li>
+            </ul>
+    </main>
+</body>
+</html>
