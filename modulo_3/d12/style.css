@@ -4,36 +4,61 @@
     padding: 0;
     margin: 0;
 }
-header,footer{
+
+html,body{
+    min-height:100vh;
+    background-color: darkgray;
+}
+
+header{
     background-color: black;
     color: white;
     text-align: center;
 }
-a{
+
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+header a,footer a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
-a:hover{
+
+header a:hover,footer a:hover{
     text-decoration: underline;
 }
-#img1{
-    background-image: url('imagens/background001.jpg');
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
-#img2{
-    background-image: url('imagens/background002.jpg');
+
+section.normal{
+    background-color: white;
+    color: black;
 }
-p{
-    padding: 10px;   
-}
-.imagem{
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-section.imagem>p{
-    width: 500px;
+
+section.imagem{
     background-color: rgba(0, 0, 0, 0.671);
-    border-radius: 15px;
+    color: white;
+}
+
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 350px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
