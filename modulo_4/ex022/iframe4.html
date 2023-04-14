@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium excepturi voluptatum explicabo tenetur quae nihil voluptatem illum magnam tempora placeat quam, veniam mollitia accusantium quos a ipsum officia maiores nesciunt.</p>
+    <!-- O parametro 'sandbox' dentro do iframe deixa seu site mais seguro , mas remove a funcionalidade do site dentro do iframe. sandbox="sandbox" é só um dos parametro, existem outros que podem funcionar melhor
+    
+    Exemplos de outro parametros:
+
+    sandbox = "allow-same-origin"
+    sandbox="allow-scripts"
+    sandbox="allow-forms"
+
+    -->
+    <!-- referrerpolicy="no-referrer" tambem é outro modo de deixar seu site mais seguro. Esse parametro impede que o site dentro do iframe pegue seu dados -->
+    <iframe src="paginas-extras/pagina4.html" name="frame" sandbox="sandbox" referrerpolicy="no-referrer">
+        <p>Infelizmete seu navegador não é compativel com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis consectetur provident assumenda asperiores itaque hic veniam, quos fuga nesciunt quidem ipsa vero quis cumque optio ut soluta neque suscipit quas!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis consectetur provident assumenda asperiores itaque hic veniam, quos fuga nesciunt quidem ipsa vero quis cumque optio ut soluta neque suscipit quas!</p>
+</body>
+</html>
